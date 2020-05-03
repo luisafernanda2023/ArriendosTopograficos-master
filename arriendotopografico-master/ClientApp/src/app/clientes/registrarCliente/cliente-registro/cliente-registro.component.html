@@ -1,0 +1,67 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-6 offset-md-3">
+
+            <h2>Registro de Cliente</h2>
+
+            <form>
+
+                <div class="form-group">
+
+                    <label>Tipo ID</label>
+
+                    <input type="text" name="tipoIdCliente" [(ngModel)]="cliente.tipoIdCliente" class="form-control" />
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Identificacion</label>
+
+                    <input type="number" name="idCliente" [(ngModel)]="cliente.idCliente" class="form-control" />
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Nombre</label>
+
+                    <input type="text" name="nombre" [(ngModel)]="cliente.nombre" class="form-control" />
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Telefono</label>
+
+                    <input type="number" name="telefono" [(ngModel)]="cliente.telefono" class="form-control" />
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Direccion</label>
+
+                    <input type="text" name="direccion" [(ngModel)]="cliente.direccion" class="form-control" />
+
+                </div>
+
+
+
+                <div class="text-center">
+
+                    <button class="btn btn-primary mr-1" (click)="add()">Registrar</button>
+
+                    <button class="btn btn-secondary" type="reset">Cancelar</button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
